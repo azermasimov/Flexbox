@@ -1,0 +1,65 @@
+.page {
+    display: flex;
+    flex-flow: row wrap;
+    background: lightblue;
+    text-align: left;
+}
+
+.page > * {
+    padding: 0px;
+    flex: 1 100%;
+}
+
+.header {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container .container-content {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 6;
+    background-color: crimson;
+}
+
+.container-content .content {
+    background-color: crimson;
+}
+
+.container .container-content .content .container-entry {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: crimson;
+}
+
+.container-content .content .container-entry .entry {
+    background-color: lightblue;
+    margin: 10px;
+    padding: 5px 100px 30px 5px;
+}
+
+.container .container-sidebar {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 400px;
+    background-color: crimson;
+}
+
+#test {
+    color: crimson;
+}
+
+.container .container-sidebar .sidebar {
+    background: lightblue;
+    flex-basis: 345px;
+    margin: 10px;
+}
+
+.footer {
+    background: yellowgreen;
+}
